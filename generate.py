@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python
 
 """Generates LaTeX, markdown, and plaintext copies of my cv."""
 
@@ -245,7 +245,7 @@ class RenderContext(object):
                     section_data['content'] = section_content
                 elif self._file_ending == ".md":
                     section_data['content'] = get_pub_md(self, section_content)
-                section_data['scholar_id'] = yaml_data['social']['google_scholar']
+                #section_data['scholar_id'] = yaml_data['social']['google_scholar']
                 section_template_name = os.path.join(
                     self.SECTIONS_DIR, section_tag + self._file_ending)
             elif section_tag == 'NEWPAGE':
