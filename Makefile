@@ -10,6 +10,7 @@ WEBSITE_DATE=$(WEBSITE_DIR)/_includes/last-updated.txt
 
 TEMPLATES=$(shell find templates -type f)
 
+SHELL=/bin/bash
 BUILD_DIR=build
 TEX=$(BUILD_DIR)/cv.tex
 PDF=$(BUILD_DIR)/cv.pdf
@@ -29,15 +30,12 @@ $(BUILD_DIR):
 	mkdir -p $(BUILD_DIR)
 
 public: $(BUILD_DIR) $(TEMPLATES) $(YAML_FILES) generate.py
-	./generate.py cv.yaml
+	source activate py3 && ./generate.py cv.yaml
 
 $(TEX) $(MD): $(TEMPLATES) $(YAML_FILES) generate.py
-	./generate.py $(YAML_FILES)
+	source activate py3 && ./generate.py $(YAML_FILES)
 
 $(PDF): $(TEX) publications/*.bib
-	# TODO: Hack for biber on OSX.
-	rm -rf /var/folders/8p/lzk2wkqj47g5wf8g8lfpsk4w0000gn/T/par-62616d6f73
-
 	latexmk -pdf -cd- -jobname=$(BUILD_DIR)/cv $(BUILD_DIR)/cv
 	latexmk -c -cd $(BUILD_DIR)/cv
 
