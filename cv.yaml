@@ -26,16 +26,20 @@ order:
   # - [teaching, Teaching Experience]
   #- [industry, Industry Experience]
   # - [projects, Projects]
+  - [teaching, Teaching Experience]
   - [skills, Skills]
   #- [coursework, Graduate Coursework]
   - [honors, Honors \& Awards]
 #  - [activities, Activities]
 
+about: '
+  I am a sixth year Physics Ph.D. student at Cornell University.'
+
 education:
   - school: Cornell University 
     location: Ithaca, New York
     degree: Ph.D. Physics
-    dates: August 2012 -- Present
+    dates: August 2012 -- May 2018 (expected)
 
   - school: University of Minnesota
     location: Minneapolis, Minnesota
@@ -52,10 +56,10 @@ research:
   - place: Cornell University
     location: Ithaca, New York
     title: Ph.D. Candidate
-    advisor: Prof. James P. Sethan
+    advisor: Prof. James P. Sethna
     dates: August 2012 -- Present
     area: Statistical and Condensed Matter Physics
-    details: Renormalization Group, Spin Glasses, Optimization, Deconvolution,\\
+    details: Spin Glasses, Renormalization Group, Optimization, Deconvolution,\\
             Inference and Modeling for SQUID and Electron Microscopy
   
   - place: Cornell University
@@ -64,7 +68,7 @@ research:
     advisor: Prof. Benjamin Widom
     dates: June 2011 -- August 2011
     area: Statistical Physics and Thermodynamics
-    details: Classical Density Functional Theory of Dilute Solutions
+    details: Classical density functional theory of dilute solutions
 
   - place: University of Minnesota
     location: Minneapolis, Minnesota
@@ -72,17 +76,34 @@ research:
     advisor: Prof. Allen Goldman
     dates: Sept 2009 -- May 2012
     area: Experimental Low Temperature Condensed Matter Physics
-    details: Experimental 
+    details: Probing superconductor phase diagram with ionic-liquid mediated gates
 
-#teaching:
-#  - semester: S2016
-#    name: Distributed Systems
-#    short: CMU 15-440/640
-#    position: TA
-#  - semester: S2013
-#    name: Software Design and Data Structures
-#    short: VT CS 2114
-#    position: TA
+  - place: Lockheed Martin
+    location: Eagan, Minnesota
+    title: Research and Development Intern
+    advisor: Dr. Brian Uhlhorn
+    dates: Summer 2009 \& 2010
+    area: Optical analog computation
+
+teaching:
+  - semester: Spring 2013
+    name: Waves, Optics, Modern Physics
+    short: P2214
+    position: TA # taught by Jim Alexander
+  - semester: Fall 2013
+    name: Honors Electromagnetism
+    short: P2217
+    position: TA  # taught by Al Sievers
+  - semester: Spring 2014
+    name: Honors Waves and Thermodynamics
+    short: P2218
+    position: TA  # taught by Dan Ralph
+  - semester: Spring 2015
+    name: Honors Waves and Thermodynamics
+    short: P2218
+    position: Lab Assistant
+    details: Developed my own Arduino and op-amp open-ended project-based curriculum
+    
 
 selected_publications:
   name: "Colin B. Clement"
@@ -93,42 +114,21 @@ selected_publications:
 #  - heading: Talks 
 #    file: conference.bib
 
-  # categories:
-  #   - heading: Conference Proceedings
-  #     prefix: C
-  #     file: conference.bib
-    # - heading: Journal Articles
-      # prefix: J
-      # file: journal.bib
-    # - heading: Workshop, Symposium, and Short Papers
-    #   prefix: W
-    #   file: short.bib
-    # - heading: Magazine Articles
-    #   prefix: M
-    #   file: magazine.bib
-    # - heading: Tech Reports
-    #   prefix: T
-    #   file: tech-reports.bib
-    # - heading: Posters
-    #   prefix: P
-    #   file: posters.bib
-
 skills:
   - title: Languages
     details: Python, C, CUDA, FORTRAN
 
 honors:
-      - title: Stanford Graduate Research Fellowship
-        year: 2016 -- 2019
-    #  - title: Tau Beta Pi Honor Society
-    #    year: Inducted 2013
-    #  - title:  BYU Office of Research \& Creative Activities Grant Winner
-    #    year: 2015
-    #  - title: BYU Heritage Scholarship
-    #    year: 2012 -- 2015
-    #    # descr: Full-tuition undergraduate scholarship
-    #  - title: Tau Beta Pi Scholarship
-    #    year: 2014
+      - title: NSF GRFP Honorable Mention
+        year: 2013 \& 2014
+      - title: Cornell Physics TA Training Leader
+        year: 2013 \& 2014
+      - title: Edmond G. Franklin Scholarship
+        year: 2010
+      - title: James Kotke Scholarship
+        year: 2010
+      - title: Deans List
+        year: 2008 -- 2010
 
 projects:
   website:
@@ -143,4 +143,6 @@ projects:
       - Hosts code for original projects and forked projects
 
 activities:
+  - Bluegrass \& Classical Mandolin, 2013 -- Present
   - Cornell University Klezmer Ensemble, 2014 -- Present
+  - Science for the People, 2016 -- Present

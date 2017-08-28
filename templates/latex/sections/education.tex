@@ -12,6 +12,11 @@
   ~< endif >~
   \hfill
   << school.dates >>
+  ~< if school.honors >~
+  \begin{itemize}
+    \item << school.honors >>
+  \end{itemize}
+  ~< endif >~
 }
 ~< endfor >~
 ~< endblock body >~

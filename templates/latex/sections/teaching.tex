@@ -4,10 +4,17 @@
     ~< for item in items >~
         \cvlistitem{
           << item.name >>
+          ~< if item.short >~
           (<< item.short >>),
+          ~< endif >~
           << item.position >>
           \hfill
           << item.semester>>
+          ~< if item.details >~
+          \begin{itemize}
+            \item << item.details >>
+          \end{itemize}
+          ~< endif >~
         }
     ~< endfor >~
 ~< endblock body >~

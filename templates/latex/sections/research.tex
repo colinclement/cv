@@ -6,6 +6,11 @@
           << item.place >>, << item.advisor >> \hfill << item.dates >>
           \begin{itemize}
           \item << item.area >>
+          ~< if item.details >~
+            \begin{itemize}
+                \item << item.details >>
+            \end{itemize}
+          ~< endif >~
           \end{itemize}
         }
     ~< endfor >~

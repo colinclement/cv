@@ -24,11 +24,12 @@
 %\usepackage[backend=biber,style=ieee,defernumbers=true]{biblatex}
 %\usepackage[backend=biber,style=ieee,defernumbers,maxnames=3,url=false,doi=false]{biblatex}
 %\usepackage[backend=biber,defernumbers,maxnames=3,url=false,doi=false]{biblatex}
-\usepackage[bibstyle=authortitle,defernumbers,maxnames=3,minnames=3,url=false,doi=false]{biblatex}
+\usepackage[bibstyle=numeric,defernumbers,maxnames=3,minnames=3,url=false,
+            doi=false,sorting=ydnt]{biblatex}
 
 % Hides numbering in bibliography
-\DeclareFieldFormat{labelnumberwidth}{}
-\setlength{\biblabelsep}{0pt}
+%\DeclareFieldFormat{labelnumberwidth}{}
+%\setlength{\biblabelsep}{0pt}
 
 % Make the author's name bold in publications.
 %\DeclareNameFormat{author}{%
@@ -56,7 +57,7 @@
 %\social[linkedin]{<<social.linkedin>>}
 %\social[twitter]{<<social.twitter>>}
 \social[github]{<<social.github>>}
-\extrainfo{\small Generated on \today}
+%\extrainfo{\small Generated on \today}
 %\photo[64pt][0.4pt]{picture}
 % \quote{Generated on \today}
 
