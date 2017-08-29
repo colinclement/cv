@@ -21,16 +21,17 @@ order:
   - [research, Research Experience]
   # - [NEWPAGE, NEWPAGE]
   - [selected_publications, Publications]
-    #- [conferences, Conference Proceedings]
+  #- [conferences, Conference Proceedings]
   # - [NEWPAGE, NEWPAGE]
   # - [teaching, Teaching Experience]
-  #- [industry, Industry Experience]
-  # - [projects, Projects]
-  - [teaching, Teaching Experience]
   - [skills, Skills]
   #- [coursework, Graduate Coursework]
   - [honors, Honors \& Awards]
-#  - [activities, Activities]
+  - [all_publications, All Publications]
+  - [industry, Industry Experience]
+  # - [projects, Projects]
+  - [teaching, Teaching Experience]
+  - [activities, Activities]
 
 about: '
   I am a sixth year Physics Ph.D. student at Cornell University.'
@@ -78,6 +79,8 @@ research:
     area: Experimental Low Temperature Condensed Matter Physics
     details: Probing superconductor phase diagram with ionic-liquid mediated gates
 
+
+industry:
   - place: Lockheed Martin
     location: Eagan, Minnesota
     title: Research and Development Intern
@@ -107,12 +110,20 @@ teaching:
 
 selected_publications:
   name: "Colin B. Clement"
-  file: selected.bib
+  file: journals.bib
 
-#conferences:
-#  categories:
-#  - heading: Talks 
-#    file: conference.bib
+all_publications:
+  name: "Colin B. Clement"
+  categories:
+  - heading: Talks 
+    prefix: C
+    file: talks.bib
+  - heading: Posters
+    prefix: C
+    file: posters.bib
+  - heading: Journal Articles
+    prefix: J
+    file: journals.bib
 
 skills:
   - title: Languages
@@ -130,19 +141,22 @@ honors:
       - title: Deans List
         year: 2008 -- 2010
 
-projects:
-  website:
-    name: Personal Website
-    url: http://davelindell.github.io
-    details:
-      - Hosted on GitHub Pages
-  github:
-    name: GitHub Portfolio
-    url: http://github.com/davelindell
-    details:
-      - Hosts code for original projects and forked projects
+#projects:
+#  website:
+#    name: Personal Website
+#    url: http://davelindell.github.io
+#    details:
+#      - Hosted on GitHub Pages
+#  github:
+#    name: GitHub Portfolio
+#    url: http://github.com/davelindell
+#    details:
+#      - Hosts code for original projects and forked projects
 
 activities:
-  - Bluegrass \& Classical Mandolin, 2013 -- Present
-  - Cornell University Klezmer Ensemble, 2014 -- Present
-  - Science for the People, 2016 -- Present
+  - title: Bluegrass & Classical Mandolin
+    year: 2013 -- Present
+  - title: Cornell University Klezmer Ensemble
+    year: 2014 -- Present
+  - title: Science for the People
+    year: 2016 -- Present
