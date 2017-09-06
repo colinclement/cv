@@ -19,7 +19,6 @@ order:
   # - [interests, Research Interests]
   - [education, Education]
   - [research, Research Experience]
-  # - [NEWPAGE, NEWPAGE]
   - [selected_publications, Publications]
   #- [conferences, Conference Proceedings]
   # - [NEWPAGE, NEWPAGE]
@@ -154,7 +153,7 @@ honors:
 #      - Hosts code for original projects and forked projects
 
 activities:
-  - title: Bluegrass & Classical Mandolin
+  - title: Bluegrass \& Classical Mandolin
     year: 2013 -- Present
   - title: Cornell University Klezmer Ensemble
     year: 2014 -- Present

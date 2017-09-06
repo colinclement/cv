@@ -1,0 +1,17 @@
+~< extends "section.tex" >~
+
+~< block body >~
+
+~< if items >~
+\begin{itemize}
+   ~< for activity in items >~
+   \item << activity.title >> \hfill << activity.year >>
+   ~< if activity.desc >~
+   \begin{itemize}
+     \item << activity.desc >>
+   \end{itemize}
+   ~< endif >~
+   ~< endfor >~
+\end{itemize}
+~< endif >~
+~< endblock body >~
