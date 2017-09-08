@@ -1,15 +1,17 @@
 ~< extends "section.tex" >~
 
 ~< block body >~
-\vspace{-6mm}
-\hfill
+%\vspace{-6mm}
+%\hfill
 %Google Scholar ID:
 %\href{https://scholar.google.com/citations?user=<< scholar_id >>}{<< scholar_id >>}
-\vspace{2mm}
+%\vspace{2mm}
 
 \renewcommand*{\bibfont}{\small}
 
+\vspace{4mm}
 ~< for p in content.categories >~
+\vspace{-5mm}
 \subsection{<<p.heading>>}
 \begin{refsection}[publications/<<p.file>>]
 \nocite{*}

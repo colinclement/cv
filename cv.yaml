@@ -18,8 +18,9 @@ color2: '0.25,0.25,0.25' # Make the font under the name a darker grey.
 order:
   # - [interests, Research Interests]
   - [education, Education]
+  - [projects, Projects]
   - [research, Research Experience]
-  - [selected_publications, Publications]
+  - [selected_publications, Selected Publications]
   #- [conferences, Conference Proceedings]
   # - [NEWPAGE, NEWPAGE]
   # - [teaching, Teaching Experience]
@@ -28,7 +29,6 @@ order:
   - [honors, Honors \& Awards]
   - [all_publications, All Publications]
   - [industry, Industry Experience]
-  # - [projects, Projects]
   - [teaching, Teaching Experience]
   - [activities, Activities]
 
@@ -78,7 +78,6 @@ research:
     area: Experimental Low Temperature Condensed Matter Physics
     details: Probing superconductor phase diagram with ionic-liquid mediated gates
 
-
 industry:
   - place: Lockheed Martin
     location: Eagan, Minnesota
@@ -86,6 +85,27 @@ industry:
     advisor: Dr. Brian Uhlhorn
     dates: Summer 2009 \& 2010
     area: Optical analog computation
+
+projects:
+  - keywords: inference, regularization, convex optimization, model selection
+    title: Bayesian Inference of Currents from Magnetic Flux Images
+    details: 'Inferring currents from magnetic images is a deconvolution problem
+        I solved by using convex optimization to regularize the maximum likelihood
+        with finite-support and novel isotropic total variation priors.  '
+  - keywords: machine learning, inverse Ising, clustering, geometry, complex systems
+    title: Effective Models of Spin Glasses
+    details: 'I found effective coarse-grained models of spin glasses---a canonical
+        model for a disordered solid---using information theoretic clustering and
+        minimum probability flow learning. This method promises more interpretable
+        maximum entropy models for complex systems.'
+  - keywords: image registration, inference, bias in maximum likelihood
+    title: Multi-Image Registration for cryoSTEM and Aberration Correction
+    details: 'Image registration is necessary to improve signal-to-noise in low 
+        temperature electron microscopy, and to correct aberrations both before
+        and after image formation. I developed a maximum likelihood theory to study
+        this problem and analyze the inherent bias in estimating image shifts.
+        '
+
 
 teaching:
   - semester: Spring 2013
@@ -109,7 +129,7 @@ teaching:
 
 selected_publications:
   name: "Colin B. Clement"
-  file: journals.bib
+  file: selected.bib
 
 all_publications:
   name: "Colin B. Clement"
@@ -126,17 +146,17 @@ all_publications:
 
 skills:
   - title: Languages
-    details: Python, C, CUDA, FORTRAN
+    details: Python, C, CUDA, FORTRAN, HTML, CSS, Unix
 
 honors:
       - title: NSF GRFP Honorable Mention
         year: 2013 \& 2014
       - title: Cornell Physics TA Training Leader
         year: 2013 \& 2014
-      - title: Edmond G. Franklin Scholarship
+      - title: Edmond G. Franklin Scholarshipm James Kotke Scholarship
         year: 2010
-      - title: James Kotke Scholarship
-        year: 2010
+#      - title: James Kotke Scholarship
+#        year: 2010
       - title: Deans List
         year: 2008 -- 2010
 

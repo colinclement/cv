@@ -1,0 +1,9 @@
+~< extends "section.tex" >~
+
+~< block body >~
+    ~< for item in items >~
+        %\cvitemwithcomment{ << item.title >>}{<< item.details >>}{<< item.keywords >>}
+        %\cventry{year--year}{Degree}{Institution}{City}{\textit{Grade}}{Description}
+        \cventry{}{ (<<item.keywords>>) }{ << item.title >>}{}{}{ << item.details >> }
+    ~< endfor >~
+~< endblock body >~
