@@ -1,11 +1,11 @@
 {% extends "section.md" %}
 
 {% block body %}
-<table class="table table-hover">
+<table style="width:100%">
 {% for item in items %}
 <tr>
   <td class='col-md-2'>{{ item.title }}</td>
-  <td markdown="1">
+  <td >
 {{ item.details }}
   </td>
 </tr>

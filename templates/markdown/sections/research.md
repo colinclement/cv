@@ -1,13 +1,13 @@
 {% extends "section.md" %}
 
 {% block body %}
-<table class="table table-hover">
+<table style="width:100%">
 {% for r in items %}
 <tr>
-  <td class='col-md-3'>{{ r.dates }}</td>
+  <td>{{ r.dates }}</td>
   <td>
     <strong>{{ r.place }}</strong>, {{ r.advisor }} <br>
-    {{ r.area }}
+    ({{ r.area }})
   </td>
 </tr>
 {% endfor %}

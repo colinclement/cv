@@ -2,7 +2,7 @@
 
 {% block body %}
 
-<table class="table table-hover">
+<table style="width:100%">
 {% for school in items %}
   <tr>
     <td class="col-md-3">{{ school.dates }}</td>

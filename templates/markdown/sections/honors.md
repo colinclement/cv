@@ -1,7 +1,7 @@
 {% extends "section.md" %}
 
 {% block body %}
-<table class="table table-hover">
+<table style="width:100%">
 {% for award in items %}
 <tr>
   <td class='col-md-2'>{{ award.year }}</td>
