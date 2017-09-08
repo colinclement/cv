@@ -98,7 +98,7 @@ def get_pub_md(context, config):
 <td>
     <strong>{}</strong><br>
     {}<br>
-    {}<br>
+    {}
     {}<br>
     {}
 </td>
@@ -110,7 +110,7 @@ def get_pub_md(context, config):
 <td>
     <strong>{}</strong><br>
     {}<br>
-    {}<br>
+    {}
     {}<br>
     {}
 </td>
@@ -149,7 +149,9 @@ def get_pub_md(context, config):
         details = ""
         sep = "\n"
         for i, pub in enumerate(pubs):
-            details += _get_pub_str(pub, '', i + 1, includeImage=True) + sep
+            details += _get_pub_str(pub, '', i + 1, includeImage=False) + sep
+            #  NOTE: if I want to include images, change includeImage to True!
+            #  details += _get_pub_str(pub, '', i + 1, includeImage=True) + sep
         contents['details'] = details
         contents['file'] = config['file']
 
@@ -305,7 +307,7 @@ MARKDOWN_CONTEXT = RenderContext(
         (r'\\&', '&'),  # unescape &
         (r'\\\$', '\$'),  # unescape $
         (r'\\%', '%'),  # unescape %
-        (r'\\textbf{([^}]*)}', r'**\1**'),  # bold text
+        (r'\\textbf{([^}]*)}', r'<b>\1</b>'),  # bold text
         (r'\{ *\\bf *([^}]*)\}', r'**\1**'),
         (r'\\textit{([^}]*)}', r'*\1*'),  # italic text
         (r'\{ *\\it *([^}]*)\}', r'*\1*'),
